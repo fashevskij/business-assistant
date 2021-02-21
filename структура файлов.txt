@@ -1,0 +1,130 @@
+Площадка размещения услуг на платформе "Бизнес-ассистент"
+Структура файлов и каталогов
+
+
+/services/images/ - папка с набором изображений
+
+/services/modules/
+	products/
+		getMore.php - обработка запросов на дополнительный вывод услуг на странице совмместного вывода
+
+	/registration/
+		emailConfirmation.php - повторная верификация почты пользователя
+
+	login.php - авторизация пользователя
+	logout.php - выход пользователя из аккаунта
+	servReviewDB.php - обработка запросов на внесение отзывов в БД
+
+/services/parts/
+	cat_nav.php	- вывод списка категорий услуг в панели категорий
+	futer.php - подключаемая завершающая часть кода страниц
+	header.php - подключаемая начальная часть кода страниц
+	pagination.php - нумерация страниц, элемент навигации
+	product_card.php - вывод информации о конкретной услуге
+
+/services/parts/
+	about.php - информационная страница о площадке предоставления информации об услугах
+	allServices.php - вывод всех услуг в одной странице
+	cat.php - вывод товаров по категориям
+	contacts.php - информационная страница с контактной информацией
+	product.php - страница отдельной услуги (информация, отзывы, ссылка на google maps)
+	registration.php - страница регистрации пользователя 
+	services.php - 
+	servReview.php - страница формирования отзывов потребителей о предоставленных услугах
+
+Площадка размещения скидок на платформе "Бизнес-ассистент"
+Структура файлов и каталогов
+
+/shop/assets/css/ - папка с содержанием разметки css bootstrap
+/shop/assets/img/ - папка с изображениями
+/shop/assets/js/ - js bootstrap и наш js
+/shop/assets/js/
+	main.js - обработка кнопки "Показать еще", добавление товаров в избранное, оформление заказа..
+
+/shop/configs/
+	db.php - подключение БД 
+ 	settings - куки авторизированых пользователей
+
+/shop/image/ - картинки для проэкта
+
+/shop/info/ - структура базы данных 
+
+/shop/modules/favorites  - работа избранное
+						add-favorites.php - добавить в избранное
+						add-order.php - оформление заказа
+						changeColProductsFavorites.php - изменение кол-ва избранного
+						delete.php - удалить из избранного
+			/products 
+						get-more.php - показать больше 
+						nav-page.php - пагинация
+			/review 
+						add-review.php - добавить отзыв
+						get-more.php - показать еще
+/shop/parts/account - реализация обычного акаунта
+			/account_b - реализация бизнес акаунта 
+			сat-nav.php - навигация с категориями
+			footer.php - низ сайта с подключениями js
+			header.php - шапка сайта с подключением стилей
+			product_card.php - карты с продуктами товаров
+			product_card_b.php - карты подписок для бинеса 
+/shop/
+		about.php - описание сайта
+		account.php - личный кабинет пользователя
+		account_b.php - личный кабинет бизнес пользователя
+		authorization.php - авторизация пользователя
+		authorization_b.php - авторизация бизнес пользователя
+		cat.php - вывод категорий из базы данных
+		contact.php - контактная информация сайта
+		exit.php - выход из аккаунтов
+		favorites.php - внешний вид избранного
+		index.php - главная
+		new_request.php - оформление заявки подачи на сайт с бизнесс аккаунта
+		order.php - оформление заказа
+		order_history.php - реализация просмотра истории заказов
+		product.php -  	вывод продуктов 
+		product_map.php - карточки для бизнеса с ценой подписки
+		products_request.php - заявка на подачу продукта
+		register_b.php - регистрация бизнес аккаунта
+		reigister.php - регистрация обычного акаунта
+		request.php - заявки на размещение
+		review.php - отзывы
+		subscribtions.php - реализация отображения прдписки в лк
+		virification.php - верификация обычного пользователя
+
+Админка сайта
+
+/admin/assets/css - папка с содержанием разметки css bootstrap
+/admin/assets/img - папка  с изображения
+/admin/assets/js - подключения js
+
+/admin/modules/categories 
+						add.php - добавить категорию
+						delete.php - удалить категорию 
+						edit.php - редактировать категорию
+				/orders (заказы )
+						edit.php - редактировать заказ
+						products.php - вывод заказов
+				/order_maps (заказ подписки)
+						edit.php - редактировать заказ
+				/products (Продукты)
+						add.php - добавить продукт
+						delet.php - удалить продукт
+						edit.php - редактировать продукт
+				/products_maps (подписки)
+						add.php - добавить продукт
+						delet.php - удалить продукт
+						edit.php - редактировать продукт
+				/request (заказы )
+						accent.php
+						detail.php - просмотор деталей
+						reject.php
+				/serv_categories (категории услуг)
+						add.php - добавить
+						delet.php - удалить
+						edit.php - редактировать
+				/derv_orders
+						edit.php - редактировать заказ услуг
+				/user
+						delete.php - удалить юсера
+				/user_b
+						delete.php - удалить юсера	
